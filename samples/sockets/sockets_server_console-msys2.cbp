@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sockets server console sample" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="wxMSW-shared">
+				<Option output="bin/$(TARGET_NAME)/sockets_server_console" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../sockets" />
+				<Option object_output="obj/$(TARGET_NAME)/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D__WXMSW__" />
+					<Add option="-DWXUSINGDLL" />
+				</Compiler>
+				<Linker>
+					<Add library="wx_base$(WX_SUFFIX)_net-$(WX_VERSION).dll" />
+					<Add library="wx_base$(WX_SUFFIX)-$(WX_VERSION).dll" />
+				</Linker>
+				<Environment>
+					<Variable name="WX_TOOLKIT" value="msw" />
+				</Environment>
+			</Target>
+			<Target title="wxMSW-static">
+				<Option output="bin/$(TARGET_NAME)/sockets_server_console" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../sockets" />
+				<Option object_output="obj/$(TARGET_NAME)/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D__WXMSW__" />
+				</Compiler>
+				<Linker>
+					<Add library="$(TARGET_COMPILER_DIR)lib/libwx_base$(WX_SUFFIX)_net-$(WX_VERSION).a" />
+					<Add library="$(TARGET_COMPILER_DIR)lib/libwx_base$(WX_SUFFIX)-$(WX_VERSION).a" />
+					<Add library="ole32" />
+					<Add library="version" />
+					<Add library="uuid" />
+					<Add library="wsock32" />
+				</Linker>
+				<Environment>
+					<Variable name="WX_TOOLKIT" value="msw" />
+				</Environment>
+			</Target>
+			<Target title="wxGTK-shared">
+				<Option output="bin/$(TARGET_NAME)/sockets_server_console" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../sockets" />
+				<Option object_output="obj/$(TARGET_NAME)/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D__WXGTK__" />
+					<Add option="-DWXUSINGDLL" />
+				</Compiler>
+				<Linker>
+					<Add library="wx_base$(WX_SUFFIX)_net-$(WX_VERSION).dll" />
+					<Add library="wx_base$(WX_SUFFIX)-$(WX_VERSION).dll" />
+				</Linker>
+				<Environment>
+					<Variable name="WX_TOOLKIT" value="gtk3" />
+				</Environment>
+			</Target>
+			<Target title="wxGTK-static">
+				<Option output="bin/$(TARGET_NAME)/sockets_server_console" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../sockets" />
+				<Option object_output="obj/$(TARGET_NAME)/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D__WXGTK__" />
+				</Compiler>
+				<Linker>
+					<Add library="$(TARGET_COMPILER_DIR)lib/libwx_base$(WX_SUFFIX)_net-$(WX_VERSION).a" />
+					<Add library="$(TARGET_COMPILER_DIR)lib/libwx_base$(WX_SUFFIX)-$(WX_VERSION).a" />
+					<Add library="version" />
+					<Add library="ole32" />
+					<Add library="uuid" />
+					<Add library="wsock32" />
+					<Add library="iconv" />
+				</Linker>
+				<Environment>
+					<Variable name="WX_TOOLKIT" value="gtk3" />
+				</Environment>
+			</Target>
+			<Target title="wxQT-shared">
+				<Option output="bin/$(TARGET_NAME)/sockets_server_console" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../sockets" />
+				<Option object_output="obj/$(TARGET_NAME)/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D__WXQT__" />
+					<Add option="-DWXUSINGDLL" />
+				</Compiler>
+				<Linker>
+					<Add library="wx_base$(WX_SUFFIX)_net-$(WX_VERSION).dll" />
+					<Add library="wx_base$(WX_SUFFIX)-$(WX_VERSION).dll" />
+				</Linker>
+				<Environment>
+					<Variable name="WX_TOOLKIT" value="qt" />
+				</Environment>
+			</Target>
+			<Target title="wxQT-static">
+				<Option output="bin/$(TARGET_NAME)/sockets_server_console" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../sockets" />
+				<Option object_output="obj/$(TARGET_NAME)/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-D__WXQT__" />
+				</Compiler>
+				<Linker>
+					<Add library="$(TARGET_COMPILER_DIR)lib/libwx_base$(WX_SUFFIX)_net-$(WX_VERSION).a" />
+					<Add library="$(TARGET_COMPILER_DIR)lib/libwx_base$(WX_SUFFIX)-$(WX_VERSION).a" />
+					<Add library="ole32" />
+					<Add library="version" />
+					<Add library="uuid" />
+					<Add library="wsock32" />
+					<Add library="iconv" />
+				</Linker>
+				<Environment>
+					<Variable name="WX_TOOLKIT" value="qt" />
+				</Environment>
+			</Target>
+			<Environment>
+				<Variable name="WX_SUFFIX" value="u" />
+				<Variable name="WX_VERSION" value="3.1" />
+			</Environment>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-ggdb" />
+			<Add option="-O0" />
+			<Add option="-DwxOVERRIDE=override" />
+			<Add option="-DwxUSE_GUI=0" />
+			<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/$(WX_TOOLKIT)-unicode-$(WX_VERSION)" />
+			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
+			<Add directory=".." />
+		</ResourceCompiler>
+		<Unit filename="baseserver.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
