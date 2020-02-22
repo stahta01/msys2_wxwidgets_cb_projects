@@ -6,6 +6,7 @@
 *.lo
 *.o
 *.obj
+*.res
 
 # Precompiled Headers
 *.gch
@@ -30,3 +31,22 @@
 *.exe
 *.out
 *.app
+
+# Source files
+*.cpp
+*.h
+*.rc
+
+# Image files
+*.cur
+*.ico
+*.png
+*.xpm
+
+# CB files
+*build_log.html
+*.layout
+*.depend
+
+# wxWidgets build files
+*.gcc
