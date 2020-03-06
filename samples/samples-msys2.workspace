@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="MSys2 wxWidgets samples">
+		<Project filename="console/console-msys2.cbp" />
+		<Project filename="archive/archive-msys2.cbp" />
+		<Project filename="ipc/ipc_client_console-msys2.cbp" />
+		<Project filename="ipc/ipc_server_console-msys2.cbp" />
+		<Project filename="secretstore/secretstore-msys2.cbp" />
+		<Project filename="sockets/sockets_client_console-msys2.cbp" />
+		<Project filename="sockets/sockets_server_console-msys2.cbp" />
+		<Project filename="minimal/minimal-msys2.cbp" />
+		<Project filename="dnd/dnd-msys2.cbp" />
+		<Project filename="ipc/ipc_client-msys2.cbp" />
+		<Project filename="sockets/sockets_client-msys2.cbp" />
+		<Project filename="sockets/sockets_server-msys2.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
