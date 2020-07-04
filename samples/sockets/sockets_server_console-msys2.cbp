@@ -135,7 +135,6 @@
 			<Add option="-fexceptions" />
 			<Add option="-ggdb" />
 			<Add option="-O0" />
-			<Add option="-DwxOVERRIDE=override" />
 			<Add option="-DwxUSE_GUI=0" />
 			<Add directory="$(TARGET_COMPILER_DIR)lib/wx/include/$(WX_TOOLKIT)-unicode-$(WX_VERSION)" />
 			<Add directory="$(TARGET_COMPILER_DIR)include/wx-$(WX_VERSION)" />
