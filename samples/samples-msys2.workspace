@@ -13,5 +13,6 @@
 		<Project filename="ipc/ipc_client-msys2.cbp" />
 		<Project filename="sockets/sockets_client-msys2.cbp" />
 		<Project filename="sockets/sockets_server-msys2.cbp" />
+		<Project filename="opengl/cube/opengl-cube-msys2.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
