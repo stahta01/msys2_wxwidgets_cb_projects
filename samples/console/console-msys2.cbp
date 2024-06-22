@@ -53,6 +53,7 @@
 					<Add library="ole32" />
 					<Add library="version" />
 					<Add library="uuid" />
+					<Add library="shlwapi" />
 				</Linker>
 				<Environment>
 					<Variable name="WX_TOOLKIT" value="msw" />
@@ -151,9 +152,6 @@
 			<Add directory=".." />
 		</ResourceCompiler>
 		<Unit filename="console.cpp" />
-		<Extensions>
-			<code_completion />
-			<envvars />
-		</Extensions>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
