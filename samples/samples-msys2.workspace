@@ -14,5 +14,6 @@
 		<Project filename="opengl/cube/opengl-cube-msys2.cbp" />
 		<Project filename="archive/archive_console-msys2.cbp" />
 		<Project filename="secretstore/secretstore_console-msys2.cbp" />
+		<Project filename="image/image-msys2.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
